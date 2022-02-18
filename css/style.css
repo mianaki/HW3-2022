@@ -184,6 +184,18 @@ img{
     grid-column-start: 2;
     grid-column-end: span 2;
   }
+
+  .about-image, .about{
+    grid-row: 1 / span 1;
+  }
+  
+  .clients-image, .clients{
+    grid-row: 2 / span 1;
+  }
+  
+  .method-image, .method{
+    grid-row: 4 / span 1;
+  }
 }
 
 
