@@ -69,12 +69,12 @@ footer a:visited{
 /*****  End Starter Code ****/
 
 /* Requirement 1 code here*/
-nav li{
+nav a{
   text-decoration: none;
 }
 
 /* Requirement 2 code here*/
-nav li:hover{
+a:hover{
   text-decoration-style: wavy;
 }
 
@@ -121,7 +121,7 @@ a:focus{
     overflow:scroll;
   }
 
-.about, .clients, .method, .contact{
+.about, .clients, .contact, .method{
   grid-column: 2;
 }
 
@@ -129,7 +129,7 @@ img{
   width: 100%;
 }
 
-.about-image, .clients-image, .method-image, .contact-image{
+.about-image, .clients-image, .contact-image, .method-image{
   grid-column: 1 / span 3;
   max-height: 500px;
   overflow: hidden;
@@ -144,9 +144,12 @@ img{
 }
 
 .method-image, .method{
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
 }
 
+.contact-image, .contact{
+  grid-row: 4 / span 1;
+}
 
 @media screen and (min-width: 700px){
   nav{
@@ -194,6 +197,10 @@ img{
   }
   
   .method-image, .method{
+    grid-row: 3 / span 1;
+  }
+
+  .contact-image, .contact{
     grid-row: 4 / span 1;
   }
 }
